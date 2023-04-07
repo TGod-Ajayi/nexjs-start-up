@@ -1,4 +1,4 @@
 export interface ICardProps {
-	currNumber: number;
-	cardName: string;
+  currNumber: number;
+  cardName: string;
 }
