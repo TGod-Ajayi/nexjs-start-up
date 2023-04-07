@@ -27,7 +27,7 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (networkError) console.log(`[Network error]: ${networkError}`);
 });
 // Function to create an Apollo Client instance and connect to the GraphQL backend
-const gqlClientConnect = (ctx: any) => {
+const gqlClientConnect = (ctx?: any) => {
   // Create a new InMemoryCache instance
   const cache = new InMemoryCache({
     // wether we add type name, feel free to enable it if you want typename
